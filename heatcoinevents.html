@@ -1,0 +1,352 @@
+	<style>
+		.counter(count, name){
+		var count;
+		var name; 
+		}
+		.header{
+			padding-left: 1%;
+			height:100px;
+			width:89.38%;
+			/* background-color:#FEB97A;<!-- #FEB97A --> */
+			background: rgb(34,193,195);
+			background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,111,180,1) 100%);
+			/**/
+			border:3px solid white;
+			text-align:center;
+		}
+
+		.post {	
+				background-color: white;
+    			color: black;
+   				padding:0;
+    			width: 95%;	
+		}
+		.font{
+			color: grey;
+			text-align: left;
+   			padding-left: 10%;
+   			padding-bottom: 1%;	
+		}
+		.fontTwo{
+			color: white;
+			text-align: left;
+   			padding-left: 10%;
+   			padding-bottom: 1%;	
+		}
+		.name{
+			color:black;
+			text-align:left;
+			padding-left: 5%;
+		}
+		#profilepic {
+ 			border-radius: 50%;
+ 			border:2px solid white;
+		}
+        /* dont forget to add this (below) as well */
+        
+        #friendsAttending {
+            color: black;
+            text-align: center;
+            font-size: 12px;
+            padding-bottom: 50px;
+            padding-left: 5px;
+        }
+        
+	</style>
+		
+		
+	<!-- header -->
+	<body style="background:#00000;">
+	
+		
+		<div class=header>
+		<p align="left"><font color="white">"karma:5 HeatCoin:3"</font><Embed src="slack-imgs.png" />
+		<img id="profilepic" src="https://amp.businessinsider.com/images/57bcae35dd08956a168b4ac1-960-720.jpg"
+		 alt="profile pic" height="100px" width="100px" align="right"></p>
+		
+		</div>
+		
+		
+	
+	
+
+	<!-- body -->
+
+		<div style="background:#E2E2E2;border:3px solid white;height:100%;width:90%;" align="center">
+			<p>"this is where posts and updates will be"</p>
+				<br>
+            
+            <style>
+* {
+    box-sizing: border-box;
+}
+
+                
+                
+                
+/* KEVAN ALL THE CHANGES ARE BETWEEN THESE LINES */                
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border:3px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+</style>
+            
+<div class="row">
+  <div class="column";>
+    <h2>Events Near Me</h2>
+    <body>
+    
+   
+      <style>
+      #map {
+        height:80%;
+        width: 100%;
+       }
+      </style>
+        
+        
+    <div id="map">
+    </div>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: 39.1031, lng: -84.5120};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: {lat: 39.109864, lng: -84.515349},
+          map: map,
+          title: 'Volunteer Day'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 39.132034, lng: -84.497129},
+          map: map,
+          title: '4H Lamb Show'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 39.104320, lng: -84.511891},
+          map: map,
+          title: 'Habitat for Humanity'
+        });
+
+             var marker = new google.maps.Marker({
+          position: {lat: 39.330630, lng: -84.308815},
+          map: map,
+          title: 'Soup Kitchen'
+        });
+
+        var marker = new google.maps.Marker({
+     position: {lat: 39.3307, lng: -84.3089},
+     map: map,
+     title: 'Financial Literacy Class'
+   });
+          
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBR5Jdou6q0mb-91h2k8XwdTF4Mv5WJo7g&callback=initMap">
+    </script>
+      
+   </body> 
+  </div>
+    
+    
+  <div class="column" style="background-color: white;">
+    <h2>Events Friends Are Attending</h2>
+    <p>
+      <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 100px 100px;
+  grid-gap: 1px;
+  background-color: #000;
+  padding: 1px;
+}
+.grid-container>div {
+  background-color: rgba(255, 255, 255);
+  text-align: center;
+  padding:1px 0;
+  font-size: 30px;
+}
+</style>
+
+<body>
+
+
+
+<div class="grid-container">
+    
+    <style>
+        .event {
+            width: 90px;
+            float: left;
+        }
+        
+        .event img {
+            height:80%;
+        }
+    </style>
+    
+  <div class="item1">
+      
+        
+      
+      <div class="event">
+      <img src="https://i0.wp.com/housefulofnicholes.com/wp-content/uploads/2014/03/habitat-for-humanity-logo.jpg">
+      </div>
+      
+       <div>
+       <font id="friendsAttending"><br><br><br>Kelsey, Natalie, and Sierra are attending <br>Habitat for Humanity!</font>
+       </div>      
+      
+  </div>
+    
+    
+  <div class="item2">
+      
+      <div class="event">
+      <img src="http://cvpost.org/wp-content/uploads/2015/02/United-Way-Icon.jpg">
+      </div>
+      
+       <div>
+       <font id="friendsAttending"><br><br><br>Sara and Carrie are attending <br>United Way!</font>
+       </div> 
+  </div>
+ 
+</div> 
+    More Events ->
+</div>
+    
+</div>
+
+<!-- starts box 3 -->
+<div class="row">
+  <div class="column" style="background-color:white;">
+    <h2>Check In Now!</h2>
+   <br><br>
+      <p>
+        
+<style>
+    .grid-container-bottom {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 50px 50px;
+        grid-gap: 1px;
+        background-color: #ffffff;
+        padding: 1px;
+}
+    .grid-container>div {
+        background-color: rgba(255, 255, 255);
+        text-align: center;
+        padding:1px 0;
+        font-size: 30px;
+}
+</style>
+
+<body>
+<div class="grid-container-bottom">
+    
+    <style>
+        .check {
+            width: 50px;
+            float: left;
+        }
+        
+        .check img {
+            height:50%;
+        }
+    </style>
+    
+    
+    
+  <div class="item1">
+      
+      <div class="check">
+      <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png">
+      </div>
+      
+     
+      <div>
+       <font id="friendsAttending"><br>StartUp Weekend Cincy</font>
+       </div>      
+
+      
+  </div>
+    
+    
+  <div class="item2">
+      
+      <div class="check">
+      <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png">
+      </div>
+      
+      
+       <div>
+       <font id="friendsAttending"><br>Hog Roast for Muscular Dystrophy</font>
+       </div>
+      
+
+  </div>
+ 
+    
+    
+    
+    
+ 
+</div> 
+      
+    </p>
+  
+    
+    
+    </div>
+
+    
+<!-- start of box 4 -->    
+  <div class="column" style="background-color:white;">
+    <h2> My Recent Events</h2>
+    <p>
+        <br>
+    <ul>
+        <li>Community Kitchen Night (+4 K)</li><br>
+        <li>Financial Wellness Seminar (+8 K)</li><br>
+        <li>SAT Prep Class (+2 K, Earned Scholarship Badge!)</li>
+    </ul>  
+    </p>
+  </div>
+   
+</div>
+				
+<!-- END OF CHANGES -->		
+            
+            
+            
+		
+	<!-- footer -->
+	
+	<div style="width:90%;background:#22C1C3;border:3px solid white;text-align:center;opacity:1;"><!-- opacity = double from 0.0 to 1.0 -->
+		<font color="white"><p>menu bar</p></font>
+		<a href="videos.html">videos</a><a href="profile.html">profile</a>
+	
+	<br>
+	</div>
+	</body>
